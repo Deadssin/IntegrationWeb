@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+    font-family: 'DM Sans' !important;
+}
+
+
+
+/* nav bar */
+nav{
+    height: 153px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav>ul{
+    list-style: none ;
+    display: flex;
+    text-align: center;
+    height: 60px;
+    margin: 0px 80px;
+    padding: 0;
+    position: relative;
+    top: 46px;
+    
+}
+
+nav>ul>li{
+    margin-left: 25px;
+    display: inline-block;
+}
+
+nav>ul>li>a{
+    padding: 16px 0px;
+    position: relative;
+    display: inline-block;
+    color: #615B57;
+    text-decoration: none;
+    font-size: 20;
+    
+    
+}
+
+nav>ul>li>a:hover{
+    text-decoration: none;
+    color: #615B57;
+    font-weight: bold;
+    
+}
+
+.btnposi{
+    padding: 10px 0px;
+}
+.btnnoir{
+    padding: 16px 0px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 22;
+    border-style: none;
+    padding: 7px 30px;
+    cursor: pointer;
+    
+}
+
+.btnnoir:hover{
+    background-color: #7f7f7f;
+}
+
+.btnvert{
+    background-color: #00FF00;
+    color: #000000;
+    border-radius: 50px;
+    font-size: 22;
+    border-style: none;
+    padding: 7px 30px;
+    cursor: pointer;
+}
+
+.btnvert:hover {
+    background-color: #82ff82;
+}
+
+/* dropdown */
+
+.dropbtn {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  border-radius: 30px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+  
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover{
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropbtn{
+    border-radius: 0px ;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+}
+
+/* intro */
+
+.intro{
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    width: 900px    ;
+}
+
+.intro>h1{
+    font-size: 75;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.intro>span{
+    background-color: #00FF00;
+    font-size: 38;
+    font-weight: bold;
+}
+
+.intro>a{
+    color: #FFFFFF !important;
+    font-size: 38;
+}
+
+/* eshop */
+
+.eshop>h2{
+    margin: 70px 0px;
+    font-size: 70;
+}
+
+.eshop{
+    margin: 0px 80px;
+}
+
+.grideshop{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: space-between;
+}
+
+.gauche{
+    grid-column: 1;
+    border: 1px solid #000000;
+    width: 600px;
+}
+
+.gauche>h3{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 40;
+}
+
+.gauche>p{
+    margin: 20px 40px;
+    font-size: 28;
+}
+
+.gauche>img{
+    width: 600px;
+}
+
+.gauche>div{
+    background-color: #000000;
+    height: 80px;
+    color: #FFFFFF ;
+    text-align: center;
+    width: 600px ;
+    font-size: 35;
+    padding: 10px 0px ;
+    font-weight: bold;
+}
+
+.droite{
+    grid-column: 2;
+    border: 1px solid #000000;
+    width: 600px;
+}
+
+.droite>h3{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 40;
+}
+
+.droite>p{
+    margin: 20px 40px;
+    font-size: 28;
+}
+
+.droite>img{
+    width: 600px;
+}
+
+.droite>div{
+    background-color: #00FF00;
+    height: 80px;
+    color: #000000 ;
+    text-align: center;
+    width: 600px ;
+    font-size: 35;
+    padding: 10px 0px ;
+    font-weight: bold;
+
+}
+
+/* magasin */
+
+.chemin{
+    max-height: 3574px;
+}
+
+.chemin>.magasin>h2{
+    font-size: 50;
+    margin-bottom: 20px;
+}
+
+.chemin>img{
+
+    margin: 0px 195px ;
+    width: 1080px;
+    z-index: 1;
+}
+
+
+
+
+.chemin>.magasin{
+    z-index: 10;
+    width: 900px;
+    margin-left: 90px;
+    position: relative;
+    bottom: 3420px;
+    background-color: #FFFFFF;
+    margin-bottom: -400px;
+}
+
+.chemin>.magasin>.grid{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap : 30px
+    
+}
+
+.chemin>.magasin>.btnnoir{
+    margin-top: 40px;
+    font-size: 29;
+    padding: 0px 50px;
+}
+
+.chemin>.magasin>p{
+    margin-top: 25px;
+    width: 800px;
+}
+
+.chemin>.g{
+    grid-column: 1;
+    
+}
+.chemin>.d{
+    grid-column: 2;
+}
+
+
+
+
+.anoir{
+    color: #FFFFFF !important;
+    background-color: #000000;
+    font-weight: bold;
+    padding: 10;
+}
+.chemin>.magasin a{
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+
+.chemin>.magasin>.grid>.d>.anoir{
+    padding: 10px 30px;
+}
+/* carroussel */
+
+.carroussel{
+    position: relative;
+    bottom: 2950px;
+}
+
+.carroussel>.carrou>div>img{
+    margin-right: 15px;
+}
+
+.slick-next{
+    background-color: #CFC8C6;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 10%;
+    height: 74%;
+    top: 0;
+    border: none;
+   
+}
+
+
+.slick-prev{
+    display: none !important;
+}
+
+/* conseil */
+
+.chemin>.conseil{
+    position: absolute;
+    right: 0;
+    top: 3140px;
+    margin-bottom: -447;
+}
+
+.chemin>.conseil>img{
+    width: 80%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    
+}
+
+.chemin>.conseil>.conseiltext{
+    background-color: #FFFFFF;
+    z-index: 15;
+    position: relative;
+    width: 60%;
+    top: 60;
+    padding: 60px;
+    /* right: 50; */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.chemin>.conseil>.conseiltext>img{
+    float: left;
+    margin-right: 60;
+    margin-bottom: 50px;
+}
+
+
+.chemin>.conseil>.conseiltext a{
+    font-size: 25;
+}
+.chemin>.conseil>.conseiltext p{
+    margin-top: 30px;
+    font-size: 20;
+}
+
+.chemin>.conseil>.conseiltext>.text{
+    padding-top: 40px;
+}
+
+/* service */
+
+.chemin>.service{
+    position: absolute;
+    top: 3870px;
+    padding-right: 0;
+    margin-bottom: -472;
+}
+
+.chemin>.service>img{
+    width: 80%;
+    z-index: 10;
+    position: absolute;
+}
+
+.chemin>.service>.servicetext{
+    background-color: #FFFFFF;
+    z-index: 15;
+    position: relative;
+    width: 60%;
+    top: 60;
+    left: 500px;
+    padding: 60px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.chemin>.service>.servicetext>img{
+    float: left;
+    margin-right: 60;
+    margin-bottom: 50px;
+}
+
+
+.chemin>.service>.servicetext a{
+    font-size: 25;
+}
+.chemin>.service>.servicetext p{
+    margin-top: 30px;
+    font-size: 20;
+}
+
+.chemin>.service>.servicetext>.text{
+    padding-top: 40px;
+}
+
+/* livraison */
+
+.chemin>.livraison{
+    position: absolute;
+    right: 0;
+    top: 4650px;
+    margin-bottom: -447;
+}
+
+.chemin>.livraison>img{
+    width: 80%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    
+}
+
+.chemin>.livraison>.livraisontext{
+    background-color: #FFFFFF;
+    z-index: 15;
+    position: relative;
+    width: 60%;
+    top: 60;
+    padding: 60px;
+    /* right: 50; */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.chemin>.livraison>.livraisontext>img{
+    float: left;
+    margin-right: 60;
+    margin-bottom: 50px;
+}
+
+
+.chemin>.livraison>.livraisontext a{
+    font-size: 25;
+}
+.chemin>.livraison>.livraisontext p{
+    margin-top: 30px;
+    font-size: 20;
+}
+
+.chemin>.livraison>.livraisontext>.text{
+    padding-top: 40px;
+}
+
+/* boutonfinal */
+
+.boutonbas{
+    text-align: center;
+    position: relative;
+    bottom: 23;
+    margin-bottom: 200px;
+}
+
+.boutonbas>.btnnoir{
+    padding: 5 70;
+    font-size: 25;
+}
+
+/* footer */
+
+footer{
+    background-color: #615B57;
+    display: grid !important;
+    grid-template-columns: 168px 188px 308px 238px;
+    color: #FFFFFF;
+    justify-content: space-evenly;
+
+}
+
+.foo1{
+    grid-column: 1;
+    margin-top: 80px;
+}
+
+.foo2{
+    grid-column: 2;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.foo3{
+    grid-column: 3;
+    margin-top: 80px;
+}
+
+.foo4{
+    grid-column: 4;
+    margin-top: 80px;
+}
+
+footer a{
+    font-size: 30;
+}
+
+footer ul{
+    padding: 0;
+    margin-top: 30px;
+}
+
+footer li{
+    list-style: none;
+    list-style-type: none;
+    color: #CFC8C6;
+    font-size: 25;
+
+}
+
+.picto{
+    margin-top: 110px;
+    display: flex;
+}
+
+.picto>li{
+    margin-right: 8px;
+}
